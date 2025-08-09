@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: orange;
+    }
+
+    .hero {
+        background-image: url(a6.jpg);
+        height: 100vh;
+        background-size: cover;
+        text-align: center;
+        color: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 0;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    h2 a {
+        font-size: 30px;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-txt {
+        margin-top: 250px;
+    }
+
+    .main-txt h1 {
+        font-size: 60px;
+        margin: 10px;
+    }
+
+    .main-txt h3 {
+        margin: 20px;
+        font-size: 30px;
+    }
+
+    .main-txt a {
+        display: inline-block;
+        background-color: dodgerblue;
+        padding: 20px 40px;
+        color: white;
+
+    }
+
+    .main-txt a:hover {
+
+        background-color: rgb(22, 123, 224);
+
+    }
+
+
+    .our-work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        padding: 100px;
+
+    }
+
+    .our-work h3 {
+        font-size: 30px;
+        margin: 0 20px;
+
+    }
+
+    .our-work p {
+        padding: 0 100px;
+        margin-top: 20px;
+
+
+    }
+
+    hr {
+        width: 150px;
+        height: 2px;
+        background-color: dodgerblue;
+        border: 0;
+        margin: 50px;
+    }
+
+    .our-work .grid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .our-work .grid li {
+        list-style-type: none;
+        padding: 20px;
+        height: 350px;
+        margin: 3px;
+        background-size: cover;
+    }
+
+    .our-work .grid li.small {
+        flex-basis: 35%;
+    }
+
+    .our-work .grid li.large {
+        flex-basis: 55%;
+    }
+
+    .featurs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+background-color: rgb(241, 235, 227);
+        padding: 15px;
+    }
+
+
+    .featurs h3{
+        font-size: 30px;
+        margin: 0 20px;
+
+    }
+
+    .featurs p{
+        padding: 0 15px;
+        margin-top: 20px;
+
+
+    }
+    .cards{
+        display: flex;
+       
+    }.newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        padding: 15px;
+    }
+
+
+    .newsletter h3 {
+        font-size: 30px;
+        margin: 0 20px;
+
+    }
+
+    .newsletter p {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+    form{
+        display: flex;
+       
+        margin: 10px;
+    }
+form input{
+    padding: 20px;
+    margin-right: 10px;
+
+}form .btn{
+padding: 20px 40px;
+background-color: dodgerblue;
+color: white;
+}
+footer{
+    background-color: rgb(32, 32, 32);
+    padding: 40PX;
+    text-align: center;
+    color: lightgrey;
+
+}footer a{
+    font-size: larger;
+}
+    @media(max-width: 770px) {
+        header {
+            flex-direction: column;
+        }
+
+        .main-txt h1 {
+            font-size: 35px;
+        }
+
+        .main-txt h3 {
+            font-size: 20px;
+        }
+
+        .main-txt a {
+            padding: 10px 20px;
+        }
+
+        .our-work,
+        .featurs,.newsletter {
+            padding: 2px;
+           
+        }.cards{
+            flex-direction: column;
+        }
+      
+    }
+</style>
+
+<body>
+    <section class="hero">
+        <div class="layer">
+
+            <header>
+                <h2><a href="#">Website Logo</a></h2>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">About</a>
+                    <a href="#contact">contacts</a>
+
+                </nav>
+
+
+
+            </header>
+            <div class="main-txt">
+                <h1>Responsive Flexbox Templat</h1>
+                <h3>A freebie by Tutorialzine.</h3>
+                <a href="">Download it Here</a>
+            </div>
+        </div>
+    </section>
+    <section class="our-work">
+        <h3 class="titel">Some of work</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam possimus repudiandae corrupti facilis,
+            deleniti, deserunt quasi odio quae facere delectus! Nostrum dolor error voluptas maxime pariatur odit
+            consequuntur ratione!</p>
+        <hr>
+        <ul class="grid">
+            <li class="small" style="background-image: url(a3.jpg) ;"></li>
+            <li class="large" style="background-image: url(a4.jpg);"></li>
+            <li class="large" style="background-image: url(a5.jpg) ;"></li>
+            <li class="small" style="background-image: url(a2.jpg) ;"></li>
+
+
+        </ul>
+
+
+
+    </section>
+    <section class="featurs">
+        <h3 class="titel">Featurs and services</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam possimus repudiandae corrupti facilis,
+            deleniti, deserunt quasi odio quae facere delectus! Nostrum dolor error voluptas maxime pariatur odit
+            consequuntur ratione!</p>
+        <hr>
+<div class="cards">
+<div class="card">
+    
+    <h4>photography</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio id cupiditate quisquam deserunt. Porro, sint ducimus dolorem necessitatibus eius numquam dolore facere recusandae quod eos, minima natus deleniti fuga!</p>
+</div>
+<div class="card">
+    
+    <h4>photography</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio id cupiditate quisquam deserunt. Porro, sint ducimus dolorem necessitatibus eius numquam dolore facere recusandae quod eos, minima natus deleniti fuga!</p>
+</div>
+<div class="card">
+    
+    <h4>photography</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio id cupiditate quisquam deserunt. Porro, sint ducimus dolorem necessitatibus eius numquam dolore facere recusandae quod eos, minima natus deleniti fuga!</p>
+</div>
+
+
+
+
+</div>
+
+
+
+    </section>
+     <section class="newsletter">
+        <h3 class="titel">Join our NewsLtter</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam possimus repudiandae corrupti facilis,
+            deleniti, deserunt quasi odio quae facere delectus! Nostrum dolor error voluptas maxime pariatur odit
+            consequuntur ratione!</p>
+        <hr>
+        <form action="">
+<input type="email" placeholder="email">
+<a href="#" class="btn" style="">Subsecribe now</a>
+
+        </form>
+         </section>
+         <footer>
+<p>Made by 
+    <a href="">tutorialzine</a>. images courtesy to
+    <a href="">unsplsah</a>
+</p>
+<p>No attraibution required. you can remove this footer</p>
+
+         </footer>
+</body>
+
+</html>
